@@ -1,0 +1,39 @@
+{
+    "bump-patch-for-minor-pre-major": true,
+    "separate-pull-requests": true,
+    "sequential-calls": true,
+    "packages": {
+        "python/openinference-semantic-conventions": {
+            "package-name": "python-openinference-semantic-conventions",
+            "release-type": "python"
+        },
+        "python/openinference-instrumentation": {
+            "package-name": "python-openinference-instrumentation",
+            "release-type": "python"
+        },
+        "python/instrumentation/openinference-instrumentation-mistralai": {
+            "package-name": "python-openinference-instrumentation-mistralai",
+            "release-type": "python"
+        },
+        "python/instrumentation/openinference-instrumentation-openai": {
+            "package-name": "python-openinference-instrumentation-openai",
+            "release-type": "python"
+        },
+        "python/instrumentation/openinference-instrumentation-llama-index": {
+            "package-name": "python-openinference-instrumentation-llama-index",
+            "release-type": "python"
+        },
+        "python/instrumentation/openinference-instrumentation-dspy": {
+            "package-name": "python-openinference-instrumentation-dspy",
+            "release-type": "python"
+        },
+        "python/instrumentation/openinference-instrumentation-bedrock": {
+            "package-name": "python-openinference-instrumentation-bedrock",
+            "release-type": "python"
+        },
+        "python/instrumentation/openinference-instrumentation-langchain": {
+            "package-name": "python-openinference-instrumentation-langchain",
+            "release-type": "python"
+        }
+    }
+}

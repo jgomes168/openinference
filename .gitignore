@@ -1,0 +1,32 @@
+# Generated dirs
+.vscode
+.idea
+.tox
+node_modules
+dist
+sdist
+*__pycache__*
+**/.pytest_cache
+**/.ipynb_checkpoints/
+**/.DS_Store
+.pnpm-store
+.npmrc
+
+# Data files
+*.csv
+*.parquet
+*.hdf
+*.hdf5
+
+# version.ts file is automatically generated at compile time
+version.ts
+
+# Local caching and environment files
+.env
+.vercel
+
+# DSPy produced files
+assertion.log
+
+# Environment variable files
+.envs
