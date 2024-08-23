@@ -1,5 +1,35 @@
 # Changelog
 
+## [0.0.11](https://github.com/jgomes168/openinference/compare/python-openinference-instrumentation-mistralai-v0.0.10...python-openinference-instrumentation-mistralai-v0.0.11) (2024-08-23)
+
+
+### Features
+
+* add support for sync streaming to mistralai ([#326](https://github.com/jgomes168/openinference/issues/326)) ([b42bc78](https://github.com/jgomes168/openinference/commit/b42bc780daea3a5ebff544ae1de90432092dacf2))
+* add tool calling support for sync and async chat completions for mistralai instrumentation ([#313](https://github.com/jgomes168/openinference/issues/313)) ([9889164](https://github.com/jgomes168/openinference/commit/9889164b4dd815cdb044d6f40a9506a02adf38c2))
+* Enable config propagation ([#741](https://github.com/jgomes168/openinference/issues/741)) ([16cdc6b](https://github.com/jgomes168/openinference/commit/16cdc6b71fb14728a3eca7db27a55b68187cb4aa))
+* Make Mistral ai instrumentation read context attributes  ([#420](https://github.com/jgomes168/openinference/issues/420)) ([e4a61c5](https://github.com/jgomes168/openinference/commit/e4a61c514c867b2f5a8b5d550176506d693ae720))
+* mistral ai instrumentation for synchronous chat completions ([#300](https://github.com/jgomes168/openinference/issues/300)) ([d2a0fb0](https://github.com/jgomes168/openinference/commit/d2a0fb00fe2118819fa6d8278e9716f4b0f8a1ba))
+* mistral instrumentation support for async chat completions ([#311](https://github.com/jgomes168/openinference/issues/311)) ([4c08ae9](https://github.com/jgomes168/openinference/commit/4c08ae957be7f6d6f4420166a2ba4726f27d8d3f))
+* support async streaming chat completions for mistralai ([#329](https://github.com/jgomes168/openinference/issues/329)) ([35e2b71](https://github.com/jgomes168/openinference/commit/35e2b7178b353fcf843b4dd45ec2f780dcbb3e3e))
+
+
+### Bug Fixes
+
+* Bump openinference-instrumentation req to avoid yanked release ([#427](https://github.com/jgomes168/openinference/issues/427)) ([a9ef31e](https://github.com/jgomes168/openinference/commit/a9ef31eb268c21328bdccc388d5fb8aeb0051cb4))
+* improve mistral support for non-ascii characters ([#479](https://github.com/jgomes168/openinference/issues/479)) ([14b09a5](https://github.com/jgomes168/openinference/commit/14b09a5335e7e057312d1d417b5b5ac7e45fd091))
+* mistral argument parsing error ([#323](https://github.com/jgomes168/openinference/issues/323)) ([ca1d5eb](https://github.com/jgomes168/openinference/commit/ca1d5eb160a05cf50163eec223468dda42e71960))
+* remove unnecessary `MistralClient` instantiation ([#508](https://github.com/jgomes168/openinference/issues/508)) ([2cb1086](https://github.com/jgomes168/openinference/commit/2cb108620ec48b119e4aca959207e4f029a6eaf2))
+* support streaming with tool calls ([#332](https://github.com/jgomes168/openinference/issues/332)) ([498e1df](https://github.com/jgomes168/openinference/commit/498e1df22d6b5d2cf3d9871c174ff63df5aa2d4c))
+* update mistralai minimum python version ([#341](https://github.com/jgomes168/openinference/issues/341)) ([04e7ee1](https://github.com/jgomes168/openinference/commit/04e7ee17c748708a28a73e8e9d43889ac3fb6fb0))
+
+
+### Documentation
+
+* TraceConfig and context attributes ([#793](https://github.com/jgomes168/openinference/issues/793)) ([d3808c4](https://github.com/jgomes168/openinference/commit/d3808c4bea3f6a4c72d3a7ea09b54e78072be6fd))
+* update mistral README.md with pypi badge ([#334](https://github.com/jgomes168/openinference/issues/334)) ([8e31667](https://github.com/jgomes168/openinference/commit/8e31667c7e15066c22de0b9f1c88aa0e5bd29c6f))
+* Update MistralAI instrumentation documentation ([#327](https://github.com/jgomes168/openinference/issues/327)) ([50ffe23](https://github.com/jgomes168/openinference/commit/50ffe23d87834e5f33d91c29cddb95cbc556636e))
+
 ## [0.0.10](https://github.com/Arize-ai/openinference/compare/python-openinference-instrumentation-mistralai-v0.0.9...python-openinference-instrumentation-mistralai-v0.0.10) (2024-08-13)
 
 
