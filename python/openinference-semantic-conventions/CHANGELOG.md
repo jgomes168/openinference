@@ -1,5 +1,25 @@
 # Changelog
 
+## [0.1.11](https://github.com/jgomes168/openinference/compare/python-openinference-semantic-conventions-v0.1.10...python-openinference-semantic-conventions-v0.1.11) (2024-08-23)
+
+
+### Features
+
+* Add `user.id` and `session.id` to semantic conventions ([#410](https://github.com/jgomes168/openinference/issues/410)) ([6588134](https://github.com/jgomes168/openinference/commit/6588134e099c86248a485bdc822c0e84853582e3))
+* add evaluator span kind to semantic conventions ([#554](https://github.com/jgomes168/openinference/issues/554)) ([7db37ff](https://github.com/jgomes168/openinference/commit/7db37ff0ccd588086e9e49b00f78b207444b2119))
+* add resource attributes to semantic conventions ([#253](https://github.com/jgomes168/openinference/issues/253)) ([8675e41](https://github.com/jgomes168/openinference/commit/8675e4109fb648d7de4ceb82814277b772a6cc3d))
+* Add vision semantic conventions messages ([#535](https://github.com/jgomes168/openinference/issues/535)) ([670b8c4](https://github.com/jgomes168/openinference/commit/670b8c41a4699a25b676f56cb83c5f355fc62a9e))
+* Added tools attribute ([#904](https://github.com/jgomes168/openinference/issues/904)) ([f1eb980](https://github.com/jgomes168/openinference/commit/f1eb980a4a91d832c80252b254bf94a273c79031))
+* **langchain:** add support for chain metadata in spans ([#175](https://github.com/jgomes168/openinference/issues/175)) ([f218740](https://github.com/jgomes168/openinference/commit/f2187403dccad43fe201be46ec4357ba2e1b1523))
+* **semcov:** add metadata ([#176](https://github.com/jgomes168/openinference/issues/176)) ([0174830](https://github.com/jgomes168/openinference/commit/0174830891cf91743b0c60d74239ebc5906704d6))
+* **semcov:** add metadata ([#179](https://github.com/jgomes168/openinference/issues/179)) ([04c303f](https://github.com/jgomes168/openinference/commit/04c303f28241da264c11503bfd64892e4baadafd))
+* **semcov:** guardrail span kind for python ([#548](https://github.com/jgomes168/openinference/issues/548)) ([09e767e](https://github.com/jgomes168/openinference/commit/09e767e2e2f48480863dc0f87ae664222dee625f))
+
+
+### Bug Fixes
+
+* JSON string attributes ([#157](https://github.com/jgomes168/openinference/issues/157)) ([392057e](https://github.com/jgomes168/openinference/commit/392057ecf4b601c5d8149697b4b8b3e91a2a2af6))
+
 ## [0.1.10](https://github.com/Arize-ai/openinference/compare/python-openinference-semantic-conventions-v0.1.9...python-openinference-semantic-conventions-v0.1.10) (2024-08-16)
 
 
