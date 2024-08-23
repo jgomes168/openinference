@@ -1,5 +1,57 @@
 # Changelog
 
+## [0.1.28](https://github.com/jgomes168/openinference/compare/python-openinference-instrumentation-langchain-v0.1.27...python-openinference-instrumentation-langchain-v0.1.28) (2024-08-23)
+
+
+### Features
+
+* add support for python 3.12 ([#271](https://github.com/jgomes168/openinference/issues/271)) ([0556d72](https://github.com/jgomes168/openinference/commit/0556d72997ef607545488112cde881e8660bf5db))
+* get messages on chat model start ([#514](https://github.com/jgomes168/openinference/issues/514)) ([dd8d253](https://github.com/jgomes168/openinference/commit/dd8d25321741dafee2a8dd5f4abe6ddd04ab0119))
+* helper function to `get_current_span()` for langchain ([#578](https://github.com/jgomes168/openinference/issues/578)) ([b4d78b0](https://github.com/jgomes168/openinference/commit/b4d78b0c2e48558c4e55ba3345badef22034f693))
+* Instrumentation reads session id from metadata ([#446](https://github.com/jgomes168/openinference/issues/446)) ([5490f68](https://github.com/jgomes168/openinference/commit/5490f6872415c1e9a874f0a7a4960a93e68afec8))
+* **langchain:** add support for chain metadata in spans ([#175](https://github.com/jgomes168/openinference/issues/175)) ([f218740](https://github.com/jgomes168/openinference/commit/f2187403dccad43fe201be46ec4357ba2e1b1523))
+* **langchain:** capture image in chat message ([#645](https://github.com/jgomes168/openinference/issues/645)) ([32fdd6b](https://github.com/jgomes168/openinference/commit/32fdd6bea1e40d81ae7c4ebada9fbdb3fc860701))
+* **langchain:** Enable configuration using common instrumentation pkg ([#685](https://github.com/jgomes168/openinference/issues/685)) ([a6feda3](https://github.com/jgomes168/openinference/commit/a6feda3683365de59b3d225a892749aedce16ff2))
+* Make langchain instrumentation read context attributes ([#419](https://github.com/jgomes168/openinference/issues/419)) ([0005fa8](https://github.com/jgomes168/openinference/commit/0005fa8025a6c5bc44535f6610de4b938b535125))
+
+
+### Bug Fixes
+
+* add printer for run times ([#301](https://github.com/jgomes168/openinference/issues/301)) ([242a50f](https://github.com/jgomes168/openinference/commit/242a50f3f9babdb890aa3990544daea5371f3cb8))
+* add token counts for langchain streaming ([#669](https://github.com/jgomes168/openinference/issues/669)) ([06975ed](https://github.com/jgomes168/openinference/commit/06975eda7734477e34610bc28c184aaf8992fb4f))
+* allow instrumentation to be suppressed in langchain instrumentor ([#243](https://github.com/jgomes168/openinference/issues/243)) ([edf20f3](https://github.com/jgomes168/openinference/commit/edf20f390b8811f751f1b8d2a0a9814535df4a90))
+* allow running handler in threads ([#302](https://github.com/jgomes168/openinference/issues/302)) ([89c9464](https://github.com/jgomes168/openinference/commit/89c946475584c31f77043139ee7812f3dd4eb748))
+* avoid langchain dependency at import time ([#222](https://github.com/jgomes168/openinference/issues/222)) ([a3e1b52](https://github.com/jgomes168/openinference/commit/a3e1b52a2868726d27299d7121c74fc00a26ddef))
+* Bump openinference-instrumentation req to avoid yanked release ([#429](https://github.com/jgomes168/openinference/issues/429)) ([54d0931](https://github.com/jgomes168/openinference/commit/54d09313900ad3bfc32f5202cd16ac725c11947a))
+* Enables `uninstrument` method on `LangchainInstrumentor` ([#353](https://github.com/jgomes168/openinference/issues/353)) ([c96ae51](https://github.com/jgomes168/openinference/commit/c96ae51bf80705e0aca6725136e2822cbe1fcdb9))
+* ensure langchain metadata is always json serializable ([#245](https://github.com/jgomes168/openinference/issues/245)) ([bb6b08b](https://github.com/jgomes168/openinference/commit/bb6b08b4789c1795921d23129a2f281c7e88f5c9))
+* fix formatting and types in langchain instrumentation ([#367](https://github.com/jgomes168/openinference/issues/367)) ([6d79c57](https://github.com/jgomes168/openinference/commit/6d79c572f611a0b1cdb69ceb79f034091a3713af))
+* handle BaseException ([#208](https://github.com/jgomes168/openinference/issues/208)) ([398280b](https://github.com/jgomes168/openinference/commit/398280b9d836f269af4e1e95e5b20c672b213f3d))
+* handle ToolMessage in LangChain instrumentor ([#520](https://github.com/jgomes168/openinference/issues/520)) ([2f42080](https://github.com/jgomes168/openinference/commit/2f42080c0d13f51e6abf6e281a3fd7167a07d625))
+* improve langchain support for non-ascii characters ([#476](https://github.com/jgomes168/openinference/issues/476)) ([c1af974](https://github.com/jgomes168/openinference/commit/c1af974a56b6364455f80c283f2401fed075224a))
+* include token counts from langchain ChatAnthropic model ([#625](https://github.com/jgomes168/openinference/issues/625)) ([131c4a1](https://github.com/jgomes168/openinference/commit/131c4a13927bfbab65814b83a2e6065e5341d133))
+* JSON string attributes ([#157](https://github.com/jgomes168/openinference/issues/157)) ([392057e](https://github.com/jgomes168/openinference/commit/392057ecf4b601c5d8149697b4b8b3e91a2a2af6))
+* **langchain:** message parsing for langgraph ([#534](https://github.com/jgomes168/openinference/issues/534)) ([ccf0683](https://github.com/jgomes168/openinference/commit/ccf06837cb054c15bb7bcdccd00daa47911dfcf0))
+* **langchain:** missing partial variables for chat prompt template ([#593](https://github.com/jgomes168/openinference/issues/593)) ([1cf1889](https://github.com/jgomes168/openinference/commit/1cf18892c636cb44428e98583d7c8f00be81dc17))
+* make tracer a singleton instance ([#517](https://github.com/jgomes168/openinference/issues/517)) ([202e584](https://github.com/jgomes168/openinference/commit/202e5842062ec1ca49a802b7a5bf4b80727df3a7))
+* metadata as json string in langchain instrumentor ([#234](https://github.com/jgomes168/openinference/issues/234)) ([0cb0850](https://github.com/jgomes168/openinference/commit/0cb085031350d1d88724b15fb57ec390525a7e98))
+* **python:** parent id for async in langchain-core 0.1.21 ([#186](https://github.com/jgomes168/openinference/issues/186)) ([9e59803](https://github.com/jgomes168/openinference/commit/9e59803dbbb9adc8c9482a62e2d2410a0d44d01a))
+* Rename base tracer and masked span ([#693](https://github.com/jgomes168/openinference/issues/693)) ([861ea4b](https://github.com/jgomes168/openinference/commit/861ea4ba45cf02a1d0519a7cd2c5c6ca5d74115b))
+* replace NaN with none in output JSON ([#211](https://github.com/jgomes168/openinference/issues/211)) ([306241d](https://github.com/jgomes168/openinference/commit/306241d4a08ce9d4d6c437365fdf9cb22b8a7622))
+* retain empty strings for template variables ([#213](https://github.com/jgomes168/openinference/issues/213)) ([c262008](https://github.com/jgomes168/openinference/commit/c2620089bc960f3778e4d0182e962c7e90a6ba5f))
+* set langchain template variables as dict ([#193](https://github.com/jgomes168/openinference/issues/193)) ([a7e2679](https://github.com/jgomes168/openinference/commit/a7e2679f7e03a2a5813d82411d35a207383fdd31))
+* stop attaching context for callback based instrumentors ([#192](https://github.com/jgomes168/openinference/issues/192)) ([c05ab06](https://github.com/jgomes168/openinference/commit/c05ab06e4529bf15953715f94bcaf4a616755d90))
+* tests for langchain latest @ 2.1 ([#511](https://github.com/jgomes168/openinference/issues/511)) ([bb99487](https://github.com/jgomes168/openinference/commit/bb99487333a4e57799d007aed283e5729149ed33))
+* use start and end times from langchain ([#304](https://github.com/jgomes168/openinference/issues/304)) ([9b92169](https://github.com/jgomes168/openinference/commit/9b92169b57fedd99906758ca15089c1295e532c8))
+
+
+### Documentation
+
+* Convert READMEs to Markdown ([#227](https://github.com/jgomes168/openinference/issues/227)) ([e4bcf4b](https://github.com/jgomes168/openinference/commit/e4bcf4b86f27cc119a77f551811f9142ec6075ce))
+* minimum working example of a custom retriever ([#510](https://github.com/jgomes168/openinference/issues/510)) ([aa8f655](https://github.com/jgomes168/openinference/commit/aa8f655c57ba0c7ad93936110d8f275e447309e5))
+* TraceConfig and context attributes ([#793](https://github.com/jgomes168/openinference/issues/793)) ([d3808c4](https://github.com/jgomes168/openinference/commit/d3808c4bea3f6a4c72d3a7ea09b54e78072be6fd))
+* Update LangChain instrumentation readme ([#349](https://github.com/jgomes168/openinference/issues/349)) ([6cb1bcf](https://github.com/jgomes168/openinference/commit/6cb1bcfbc0d19d96eca0221f3359d153a5fcc73c))
+
 ## [0.1.27](https://github.com/Arize-ai/openinference/compare/python-openinference-instrumentation-langchain-v0.1.26...python-openinference-instrumentation-langchain-v0.1.27) (2024-08-10)
 
 
